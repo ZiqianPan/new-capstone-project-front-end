@@ -60,7 +60,7 @@ function App() {
     }
   };
   console.log(
-    `<App /> rendered! error= ${error} loading = ${loading} num students = ${studentData.length}`
+    `<App /> rendered! error = ${error} loading = ${loading} num students = ${studentData.length}`
   );
   return (
     <div className="App">
@@ -68,7 +68,7 @@ function App() {
           else if error, render <Error error={error} />
           else render <StudentList />
        */}
-     <Container center={Boolean(error || loading)} > {renderContent()}</Container>
+     <Container center={Boolean(error || loading)} > {renderContent()} </Container>
     </div>
   );
 }
