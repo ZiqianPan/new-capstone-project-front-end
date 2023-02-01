@@ -1,6 +1,8 @@
 import './StudentCard.css';
+import {useState} from 'react';
 
 const StudentCard = ({ student }) => {
+  const [expanded, setExpanded] = useState(false)
   const { email, company, firstName, lastName, pic, grades, id, skill } =
     student;
 
@@ -34,6 +36,11 @@ const StudentCard = ({ student }) => {
           <li>Skill: {skill}</li>
           <li>Average: {average}%</li>
         </ul>
+        {expanded && <div className='StudentCard__grades'> 
+        <ul>
+        {grades.map((grade,index)=><li key={`${grade}-${index}`}>Test {index+1} {grade}%</li>)}
+          </ul>
+          </div>}
       </div>
     </div>
   );
