@@ -1,33 +1,48 @@
 .StudentCard {
-    display: grid;
-    grid-template-columns: 100px 5fr 1fr;
-    gap: 10px;
-    padding: 16px;
-    border-bottom: 1px solid #eee;
+  display: grid;
+  grid-template-columns: 100px 5fr 1fr;
+  gap: 10px;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
 }
 
 .StudentCard__avatar {
-    display: grid;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .StudentCard__avatar img {
-    width: 100px;
-    border: 1px solid #ccc;
-    border-radius: 100%;
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 100%;
 }
 
 .StudentCard__info h1 {
-    margin: 0;
-    text-transform: uppercase;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .StudentCard__info ul {
-    padding-inline-start: 16px;
-    color: #777
+  padding-inline-start: 16px;
+  color: #777;
 }
 
 .StudentCard__info li {
-    list-style-type: none;
+  list-style-type: none;
+}
+
+.StudentCard__grades span {
+  display: inline-block;
+  min-width: 64px;
+}
+
+.StudentCard__controls button {
+  background: none;
+  border: none;
+  padding-top: 6px;
+  padding: 0;
+  font-size: 24px;
+  color: #aaa;
+  cursor: pointer;
 }
