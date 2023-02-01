@@ -42,6 +42,7 @@ const StudentCard = ({ student }) => {
           </ul>
           </div>}
       </div>
+      <div className='StudentCard__controls'> <button onClick={()=> {setExpanded(!expanded)}}>{expanded ? '-' : '+'}</button></div>
     </div>
   );
 };
