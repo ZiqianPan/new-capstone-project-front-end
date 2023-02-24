@@ -1,6 +1,12 @@
 # TODOs
-run npm i
-make .env
+import using this starter code.
+
+run ```npm i```
+
+make ```.env```
+
 setup -  const API_URL = process.env.REACT_APP_API_URL;
-npm start
+
+run ```npm start```
+
 
